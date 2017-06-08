@@ -76,7 +76,7 @@
     // for this case, the code execution will be synchronous
     // and so suspended like generator functions
     
-    // voici le promiseAll traduit avec async/await
+    // here convertion of promiseAll() to asyncAwait()
 
     asyncAwait()
 
@@ -95,7 +95,7 @@
         }
     }
 
-    // juste pour terminer l'animation
+    // just for finish the animation
     document.getElementById('title').style.display = 'block'
 
 })()
