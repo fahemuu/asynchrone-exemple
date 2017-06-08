@@ -9,7 +9,7 @@
             fileName = files[i],
             fileNumber = i + 1
 
-        script.setAttribute('src', '/exemples/0' + fileNumber + '-' + fileName + '.js')
+        script.setAttribute('src', 'https://raw.githubusercontent.com/Jonathancollinet/asynchrone-exemple/master/exemples/0' + fileNumber + '-' + fileName + '.js')
 
         setTimeout(((script) => () => {
             document.body.appendChild(script)
