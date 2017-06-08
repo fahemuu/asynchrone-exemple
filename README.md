@@ -2,6 +2,10 @@
 
 Here is the [demo](https://jonathancollinet.github.io/asynchrone-exemple/).
 
+## Run
+
+```$> npm i && npm start```
+
 ## Description
 
 You'll find concret javascript asynchrone cases in files from ```./exemples/```.
@@ -9,10 +13,6 @@ You'll find concret javascript asynchrone cases in files from ```./exemples/```.
 From callback, accross promises, end by async functions.
 
 All is commented.
-
-## How to run
-
-```$> npm i && npm start```
 
 Good learning
 
@@ -27,10 +27,6 @@ Vous trouverez à travers les fichiers dans le dossier ```./lang/fr/``` ou dans 
 En partant des callbacks, passant par les promesses, et terminant par les fonctions asynchrone.
 
 Tout est commenté.
-
-## How to run
-
-```$> npm i && npm start```
 
 Bonne lecture
 
