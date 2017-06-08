@@ -71,6 +71,11 @@
         })
     }
 
+    // race and all are interesting
+    // and async/await don't replace them
+    // for this case, the code execution will be synchronous
+    // and so suspended like generator functions
+    
     // here convertion of promiseAll() to asyncAwait()
 
     asyncAwait()
