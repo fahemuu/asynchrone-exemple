@@ -26,7 +26,7 @@
     }
 
     // l'api Promise nous offre d'autres possibilités
-    // nous y trouvons all(Array) qui est utile si on veux faire plusieurs requêtes en concurrence
+    // nous y trouvons all(Array) qui est utile si on veux attendre le résultat de chacune des promesses
 
     Promise.all([/* promesse1, promesse2, promesse3 */]).then(/* ... */).catch(/* ... */)
 
@@ -71,11 +71,6 @@
         })
     }
 
-    // le race et le all sont intéressant
-    // mais le async/await ne remplacent pas le race et le all
-    // dans ce cas préci l'execution sera synchrone
-    // et donc ce sera requete après requete que le code sera joué
-    
     // voici le promiseAll traduit avec async/await
 
     asyncAwait()
