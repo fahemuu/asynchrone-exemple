@@ -1,8 +1,8 @@
 'use strict';
 
-(function () {
+(() => {
 
-    // arrivé dans es6
+    // méthode es6 avec les Promise
 
     // la fonction retourne maintenant une promesse
     // ne prend plus de callback en paramètre
@@ -31,9 +31,9 @@
     // cas basique
     get('/users.json')
         .then((data) => {
-            console.log(data)
+            console.log("promise basic case", data)
         }).catch((err) => {
-            console.error(err)
+            console.error("promise problematic case", err)
         })
 
     // cas problèmatique résolu - plus de callback hell
@@ -44,37 +44,37 @@
     // a utiliser le pouvoir des scopes ou des closures.
     get('/users.json')
         .then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             // il est tout a fait possible de retourner des valeurs primitives et non primitive
             // dans le contexte des callbacks des promesses, la fonction
             // retourne toujours une promise, et accessoirement accompagné d'une valeur possible
             return 20
         }).then((data) => {
-            console.log(data) // affiche 20
+            console.log("promise problematic case", data) // affiche 20
             return get('/users.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             // s'il y a une erreur dans le moindre .then
             // cette erreur sera "attrapée" par la methode .catch() plus bas
             // ici il va y avoir un probleme a cause du mauvais nom de fichier
             return get('/gyughufez.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
-            console.log(data)
+            console.log("promise problematic case", data)
             return get('/users.json')
         }).catch((err) => {
-            console.error(err)
+            console.error("promise problematic case", err)
         })
 
 })()

@@ -1,30 +1,26 @@
 'use strict';
 
-// ce petit bout de code sert juste
-// à loader fichier par fichier
-// sur un interval de 3 secondes
-// et gérer un petit compteur
-const files = ["callback.js", "promise.js", "async.js", "allerplusloin.js"],
-    cnt = document.getElementById('counter')
+(() => {
+    // ce petit bout de code sert juste
+    // à loader fichier par fichier
+    // sur un interval de 3 secondes
+    const files = ['callback', 'promise', 'asyncAwait', 'allerplusloin']
 
-let nb = 3
+    for (let i = 0, len = files.length; i < len; i++) {
 
-for (let i = 0, len = files.length; i < len; i++) {
+        const script = document.createElement('script'),
+            fileName = files[i],
+            fileNumber = i + 1
 
-    const script = document.createElement("script")
-    script.setAttribute('src', files[i])
+        script.setAttribute('src', '/exemples/0' + fileNumber + '-' + fileName + '.js')
 
-    setTimeout(((script) => () => {
-        document.body.appendChild(script)
-    })(script), 3000 * (i + 1))
-
-    setTimeout(counter, 1000 * i)
-}
-
-function counter() {
-    if (nb) {
-        cnt.innerText = nb--
-    } else {
-        cnt.style.display = 'none'
+        setTimeout(((script) => () => {
+            document.body.appendChild(script)
+            // on met en vert le bon 'li'
+            const li = document.getElementById(fileName)
+            li.style.color = 'green'
+            li.style.fontStyle = 'italic'
+            li.innerText = '(included) ' + li.innerText
+        })(script), 1500 * fileNumber)
     }
-}
+})()
