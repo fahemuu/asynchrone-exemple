@@ -1,5 +1,7 @@
 # Callback, Promise, Async/Await exemples
 
+Here is the [https://jonathancollinet.github.io/asynchrone-exemple/](demo).
+
 ## Description
 
 You'll find concret javascript asynchrone cases in files from ```./exemples/```.
@@ -10,9 +12,7 @@ All is commented.
 
 ## How to run
 
-Just mount the folder with a http server (http-server, live-server, ...).
-
-```$> http-server```
+```$> npm i && npm start```
 
 Good learning
 
@@ -30,9 +30,7 @@ Tout est commenté.
 
 ## How to run
 
-Je vous conseil d'utiliser http-server, live-server ou un équivalent.
-
-```$> http-server```
+```$> npm i && npm start```
 
 Bonne lecture
 

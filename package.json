@@ -1,0 +1,19 @@
+{
+  "name": "asynchrone-exemple",
+  "version": "1.0.0",
+  "description": "Basic callback, promises, async/await exemples",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonathancollinet/asynchrone-exemple.git"
+  },
+  "author": "Jonathan Collinet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonathancollinet/asynchrone-exemple/issues"
+  },
+  "homepage": "https://github.com/Jonathancollinet/asynchrone-exemple#readme"
+}
