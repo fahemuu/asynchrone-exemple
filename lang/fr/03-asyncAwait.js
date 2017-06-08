@@ -2,9 +2,9 @@
 
 (() => {
 
-    // es8 async & await
+    // méthode es8 avec async/await
 
-    // We continue to use promises
+    // On continue d'utiliser les promesses
     function get(url) {
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest()
@@ -12,10 +12,10 @@
             xhr.onreadystatechange = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
-                        // good job - resolve!
+                        // tout est ok - resolve!
                         resolve(JSON.parse(xhr.responseText))
                     } else {
-                        // little problem... reject!
+                        // petit probleme ... reject!
                         reject(xhr)
                     }
                 }
@@ -26,31 +26,31 @@
         })
     }
 
-    // basic case
-    // We need to declare functions with the 'async' keyword
-    // otherwise the 'await' keyword wouln't works.
+    // cas basique
+    // il faut se trouver dans une fonction type 'async'
+    // sinon le mot clef 'await' ne fonctionnera pas
 
     fetchData()
 
     async function fetchData() {
         const result = await get('/users.json')
-        // now, we can asynchronous synchronously
+        // mais maintenant, on peut faire de l'asynchrone dans le synchrone
         console.log("async basic case", result)
     }
 
-    // problematic case -> error rejection
-    // In this case we must attach for each get a catch function call
-    // But this problem isn't since we can nicely pass a function reference
+    // cas problèmatique -> la gestion d'erreur
+    // dans ce cas précis il va quand même falloir placer un .catch() sur chaque get
+    // mais comme tout problème, peut être très facilement déjoué en réutilisant une fonction par son pointeur.
     
     fetchMoreData()
 
     async function fetchMoreData() {
-        // now, we can asynchronous synchronously
+        // maintenant, on peut faire de l'asynchrone dans le synchrone
         const result = await get('/users.json').catch(fail),
             result2 = await get('/users.json').catch(fail),
             result3 = await get('/users.json').catch(fail),
-            // the next get call will throw an exception so the catch function will be called
-            // and typeof result4 === 'undefined'
+            // disons que le result4 va provoquer une erreur
+            // dans tout les cas result4 vaudra undefined si une erreur est rejeté
             result4 = await get('/hduiehidduheziuf.json').catch(fail),
             result5 = await get('/users.json').catch(fail),
             result6 = await get('/users.json').catch(fail)
@@ -58,6 +58,7 @@
         console.log("async problematic case", result, result2, result3, result4, result5, result6)
     }
 
+    // le tour est joué
     function fail(err) {
         console.error("async problematic case", err)
     }

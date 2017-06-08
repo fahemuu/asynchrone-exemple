@@ -1,7 +1,7 @@
 'use strict';
 
 (() => {
-    const files = ['callback', 'promise', 'asyncAwait', 'gofurther']
+    const files = ['callback', 'promise', 'asyncAwait', 'allerplusloin']
 
     for (let i = 0, len = files.length; i < len; i++) {
 
@@ -9,7 +9,7 @@
             fileName = files[i],
             fileNumber = i + 1
 
-        script.setAttribute('src', '/exemples/0' + fileNumber + '-' + fileName + '.js')
+        script.setAttribute('src', '/0' + fileNumber + '-' + fileName + '.js')
 
         setTimeout(((script) => () => {
             document.body.appendChild(script)

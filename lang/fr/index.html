@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Async Exemples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Asynchrone exemples</h2>
+    <p>
+        Chaque fichier d'exemple est inclu toutes les 1,5 seconde dans le HTML.
+    </p>
+    <p>
+        Donc chaque fichier est joué sur un intervalle de 1,5 seconde pour gagner en lisibilité.
+    </p>
+    <p>
+        Chaque fichier reprend le même principe: faire un get sur un json.
+    </p>
+    <p>
+        Mais chaque fichier comprend une méthode différente.
+    </p>
+    <p>
+        Ils sont joué dans l'ordre c'est-à-dire
+    </p>
+    <ol>
+        <li id="callback">callback.js -> le cas basique es5</li>
+        <li id="promise">promise.js -> utilisation des promise avec es6</li>
+        <li id="asyncAwait">asyncAwait.js -> utilisation des mot-clefs async/await avec es8</li>
+        <li id="allerplusloin">allerplusloin.js -> d'autres cas d'utilisation avec les promises</li>
+    </ol>
+
+    <h2 id="title">Maintenant vous pouvez ouvrir la console pour voir les résultats ou vous pouvez recharger la page pour rejouer les scripts
+        (et voir les résultats en live avec la console ouverte).</h2>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

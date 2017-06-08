@@ -2,19 +2,19 @@
 
 (() => {
 
-    // es5
+    // méthode es5
 
-    // classic get method
+    // un get plus que classique
     function get(url, success, error) {
         const xhr = new XMLHttpRequest()
 
         xhr.onreadystatechange = () => {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
-                    // good job - success!
+                    // tout est ok - success!
                     success(JSON.parse(xhr.responseText))
                 } else {
-                    // little problem ... error!
+                    // petit probleme ... error!
                     error(xhr)
                 }
             }
@@ -24,10 +24,10 @@
         xhr.send()
     }
 
-    // basic case
-    // Callback usage
-    // We send success callback and error callback
-    // in first and second parameters of the get function
+    // cas basique
+    // utilisation des callbacks
+    // ici on envoi en premier paramètre le callback de succès
+    // en second paramètre le callback d'erreur
 
     get('/users.json', (data) => {
         console.log("basic case", data)
@@ -35,7 +35,7 @@
         console.error("basic case", err)
     })
 
-    // problematic case - callback hell
+    // cas problèmatique - callback hell
     get('/users.json', (data) => {
         get('/users.json', (data) => {
             get('/users.json', (data) => {
