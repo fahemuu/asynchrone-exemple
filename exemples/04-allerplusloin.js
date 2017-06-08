@@ -26,7 +26,7 @@
     }
 
     // l'api Promise nous offre d'autres possibilités
-    // nous y trouvons all(Array) qui est utile si on veux faire plusieurs requêtes en parallèle
+    // nous y trouvons all(Array) qui est utile si on veux faire plusieurs requêtes en concurrence
 
     Promise.all([/* promesse1, promesse2, promesse3 */]).then(/* ... */).catch(/* ... */)
 
