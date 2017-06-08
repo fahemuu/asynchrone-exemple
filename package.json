@@ -1,6 +1,6 @@
 {
   "name": "asynchrone-exemple",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Basic callback, promises, async/await exemples",
   "main": "main.js",
   "scripts": {
