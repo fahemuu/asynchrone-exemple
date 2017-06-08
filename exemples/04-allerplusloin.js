@@ -28,7 +28,7 @@
     // l'api Promise nous offre d'autres possibilités
     // nous y trouvons all(Array) qui est utile si on veux faire plusieurs requêtes en parallèle
 
-    Promise.all([/* promesse1, promesse2, promesse3 */]).then(/* ... */)
+    Promise.all([/* promesse1, promesse2, promesse3 */]).then(/* ... */).catch(/* ... */)
 
     // cas d'utilisation classique
 
@@ -51,9 +51,9 @@
     }
 
     // il y a aussi race(Array) qui va nous permettre de résoudre la première requete terminée
-    // la première requete qui se termine déclenche le .then et les 
+    // la première requete qui se termine déclenche le .then ou la premiere erreur déclenche le .catch
 
-    Promise.race([/* promesse1, promesse2, promesse3 */]).then(/* ... */)
+    Promise.race([/* promesse1, promesse2, promesse3 */]).then(/* ... */).catch(/* ... */)
 
     promiseRace()
 
