@@ -3,7 +3,7 @@
 (() => {
     // ce petit bout de code sert juste
     // à loader fichier par fichier
-    // sur un interval de 3 secondes
+    // sur un interval de 1,5 secondes
     const files = ['callback', 'promise', 'asyncAwait', 'allerplusloin']
 
     for (let i = 0, len = files.length; i < len; i++) {
