@@ -26,7 +26,7 @@
                 }
             }
 
-            xhr.open('GET', url)
+            xhr.open('GET', "https://rawgit.com/Jonathancollinet/asynchrone-exemple/master" + url)
             xhr.send()
         })
     }
