@@ -17,10 +17,7 @@
         setTimeout(((script) => () => {
             document.body.appendChild(script)
             // on met en vert le bon 'li'
-            const li = document.getElementById(fileName)
-            li.style.color = 'green'
-            li.style.fontStyle = 'italic'
-            li.innerText = '(included) ' + li.innerText
+            document.getElementById(fileName).classList.add('included')
         })(script), 1500 * fileNumber)
     }
 })()
