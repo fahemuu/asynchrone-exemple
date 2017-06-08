@@ -9,8 +9,11 @@ Here is the [demo](https://jonathancollinet.github.io/asynchrone-exemple/).
 ## Reading
 
 [You promess me a burger party!](https://kosamari.com/notes/the-promise-of-a-burger-party)
+
 [MDN promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 [MDN async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
 [MDN await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
 ## Description
