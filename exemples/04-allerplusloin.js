@@ -72,8 +72,10 @@
     }
 
     // le race et le all sont intéressant
-    // mais le all est, si je peux me permettre sauf cas très précis, obsolète
-    // depuis l'arrivée des async/await
+    // mais le async/await ne remplacent pas le race et le all
+    // dans ce cas préci l'execution sera synchrone
+    // et donc ce sera requete après requete que le code sera joué
+    
     // voici le promiseAll traduit avec async/await
 
     asyncAwait()
