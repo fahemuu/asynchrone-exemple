@@ -62,4 +62,19 @@
         console.error("async problematic case", err)
     }
 
+    // other advantage:
+    // async functions allways return promises
+    // we can now chain on our fetchMoreData() call
+
+    fetchMoreData()
+        .then((data) => {
+            console.log(data)
+            return 'success'
+        }).then((status) => {
+            if (status !== 'success') {
+                throw 'little problem...'
+            }
+            return true
+        }).catch(fail)
+
 })()

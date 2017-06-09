@@ -41,7 +41,7 @@
     // cas problèmatique -> la gestion d'erreur
     // dans ce cas précis il va quand même falloir placer un .catch() sur chaque get
     // mais comme tout problème, peut être très facilement déjoué en réutilisant une fonction par son pointeur.
-    
+
     fetchMoreData()
 
     async function fetchMoreData() {
@@ -62,5 +62,20 @@
     function fail(err) {
         console.error("async problematic case", err)
     }
+
+    // un autre avantage:
+    // les fonctions async retournent toujours une promesse
+    // nous pouvons donc chaîner les appels sans problèmemes:
+
+    fetchMoreData()
+        .then((data) => {
+            console.log(data)
+            return 'success'
+        }).then((status) => {
+            if (status !== 'success') {
+                throw 'little problem...'
+            }
+            return true
+        }).catch(fail)
 
 })()
