@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/Jonathancollinet/asynchrone-exemple.svg?branch=master)](https://travis-ci.org/Jonathancollinet/asynchrone-exemple)
 
+![post.jpg](https://jonathancollinet.github.io/asynchrone-exemple/assets/img/post.jpg)
+
 # Callback, Promise, Async/Await exemples 
 
 Here is the [demo](https://jonathancollinet.github.io/asynchrone-exemple/).
