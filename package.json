@@ -1,7 +1,16 @@
 {
   "name": "asynchrone-exemple",
   "version": "2.2.1",
-  "description": "Basic callback, promises, async/await exemples",
+  "description": "Javascript asynchronous exemples, callback, promises, async/await",
+  "keywords": [
+    "javascript",
+    "asynchronous",
+    "exemples",
+    "async",
+    "await",
+    "callback",
+    "promise"
+  ],
   "main": "main.js",
   "scripts": {
     "start": "live-server",

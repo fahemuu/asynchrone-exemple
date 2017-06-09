@@ -2,7 +2,9 @@
 
 ![post.jpg](https://jonathancollinet.github.io/asynchrone-exemple/assets/img/post.jpg)
 
-# Callback, Promise, Async/Await exemples 
+# Javascript asynchronous exemples
+
+## Callback, Promise, Async/Await
 
 Here is the [demo](https://jonathancollinet.github.io/asynchrone-exemple/).
 
