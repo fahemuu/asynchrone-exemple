@@ -4,7 +4,8 @@
   "description": "Basic callback, promises, async/await exemples",
   "main": "main.js",
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "test": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jonathancollinet/asynchrone-exemple/issues"
   },
-  "homepage": "https://github.com/Jonathancollinet/asynchrone-exemple#readme"
+  "homepage": "https://github.com/Jonathancollinet/asynchrone-exemple#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
 }
