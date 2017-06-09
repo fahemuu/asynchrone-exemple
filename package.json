@@ -1,6 +1,6 @@
 {
   "name": "asynchrone-exemple",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Javascript asynchronous exemples, callback, promises, async/await",
   "keywords": [
     "javascript",
