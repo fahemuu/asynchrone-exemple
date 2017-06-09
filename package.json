@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "live-server",
-    "test": "live-server"
+    "test": "echo 'hello'"
   },
   "repository": {
     "type": "git",
