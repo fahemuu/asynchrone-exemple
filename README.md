@@ -1,4 +1,6 @@
-# Callback, Promise, Async/Await exemples [![Build Status](https://travis-ci.org/Jonathancollinet/asynchrone-exemple.svg?branch=master)](https://travis-ci.org/Jonathancollinet/asynchrone-exemple)
+[![Build Status](https://travis-ci.org/Jonathancollinet/asynchrone-exemple.svg?branch=master)](https://travis-ci.org/Jonathancollinet/asynchrone-exemple)
+
+# Callback, Promise, Async/Await exemples 
 
 Here is the [demo](https://jonathancollinet.github.io/asynchrone-exemple/).
 
