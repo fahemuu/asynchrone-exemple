@@ -6,7 +6,7 @@
 
     // Now the get function return a new Promise
     // The function doesn't take callbacks parameters
-    // but not we call two specials methods
+    // but now we call two specials methods
     // resolve and reject
     // both in the Promise constructor function parameters
     // so success/error callbacks are respectivly renamed resolve/reject
