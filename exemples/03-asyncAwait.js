@@ -56,6 +56,7 @@
             result6 = await get('/users.json').catch(fail)
 
         console.log("async problematic case", result, result2, result3, result4, result5, result6)
+        return result
     }
 
     function fail(err) {
