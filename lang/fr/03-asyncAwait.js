@@ -2,7 +2,7 @@
 
 (() => {
 
-    // méthode es8 avec async/await
+    // méthode eES2017 avec async/await
 
     // On continue d'utiliser les promesses
     function get(url) {

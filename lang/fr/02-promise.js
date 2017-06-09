@@ -2,7 +2,7 @@
 
 (() => {
 
-    // méthode es6 avec les Promise
+    // méthode es2015 avec les Promise
 
     // la fonction retourne maintenant une promesse
     // ne prend plus de callback en paramètre
@@ -47,9 +47,7 @@
     // cas problèmatique résolu - plus de callback hell
     get('/users.json')
         .then((data) => {
-            console.log("promise problematic case", data)
-            return get('/users.json')
-        }).then((data) => {
+            // maintenant on peut chaîner avec .then() et .catch()
             console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
@@ -68,12 +66,7 @@
             // ici il va y avoir un probleme a cause du mauvais nom de fichier
             return get('/gyughufez.json')
         }).then((data) => {
-            console.log("promise problematic case", data)
-            return get('/users.json')
-        }).then((data) => {
-            console.log("promise problematic case", data)
-            return get('/users.json')
-        }).then((data) => {
+            // on peux enchainer encore et encore...
             console.log("promise problematic case", data)
             return get('/users.json')
         }).catch((err) => {

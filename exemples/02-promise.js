@@ -2,7 +2,7 @@
 
 (() => {
 
-    // es6 Promises
+    // es2015 Promises
 
     // Now the get function return a new Promise
     // The function doesn't take callbacks parameters
@@ -46,10 +46,9 @@
 
     // Problematic case resolved, no more callback hell
     get('/users.json')
+
         .then((data) => {
-            console.log("promise problematic case", data)
-            return get('/users.json')
-        }).then((data) => {
+            // now we can chain with then/catch function
             console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
@@ -60,19 +59,15 @@
             return 20
         }).then((data) => {
             console.log("promise problematic case", data) // display 20
-            return get('/users.json')
-        }).then((data) => {
-            console.log("promise problematic case", data)
             // If an error occurs, it will be cought by the catch() function
             // here this get should fail
             return get('/gyughufez.json')
         }).then((data) => {
+            // we can chain again
             console.log("promise problematic case", data)
             return get('/users.json')
         }).then((data) => {
-            console.log("promise problematic case", data)
-            return get('/users.json')
-        }).then((data) => {
+            // and again....
             console.log("promise problematic case", data)
             return get('/users.json')
         }).catch((err) => {

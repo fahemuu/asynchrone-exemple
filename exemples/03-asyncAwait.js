@@ -2,7 +2,7 @@
 
 (() => {
 
-    // es8 async & await
+    // es2017 async & await
 
     // We continue to use promises
     function get(url) {

@@ -2,7 +2,7 @@
 
 (() => {
 
-    // méthode es5
+    // méthode ES5
 
     // un get plus que classique
     function get(url, success, error) {
